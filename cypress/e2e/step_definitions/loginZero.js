@@ -1,6 +1,7 @@
 import {
     Given,
     When,
+    Then,
   } from "@badeball/cypress-cucumber-preprocessor";
 
 
@@ -15,6 +16,6 @@ import {
           
     });
 
-    When("user get Search Result page", ()=>{
+    Then("user get Search Result page", ()=>{
         cy.get("h2").should("contain.text", "Search Results:");
     });
